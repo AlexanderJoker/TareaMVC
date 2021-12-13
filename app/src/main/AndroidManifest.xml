@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TareaMVC">
         <activity
+            android:name=".editar"
+            android:exported="true" />
+        <activity
             android:name=".lista"
             android:exported="true" />
         <activity

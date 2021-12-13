@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editar">
+
+    <Button
+        android:id="@+id/btnsalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Salir"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="384dp"
+        android:layout_height="518dp"
+        android:background="#BABABA"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/lblNombre2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:text="Nombre:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtnom2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtnom2"
+            android:layout_width="317dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Ingrese el nombre del empleado"
+            android:inputType="textPersonName"
+            android:maxLength="100"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/label3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label4" />
+
+        <TextView
+            android:id="@+id/lblApellido2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:text="Apellidos:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtnom2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtape2"
+            android:layout_width="319dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Ingrese el apellido del empleado"
+            android:inputType="textPersonName"
+            android:maxLength="100"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label" />
+
+        <TextView
+            android:id="@+id/lblEdad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:text="Edad:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtape2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtedad"
+            android:layout_width="317dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Ingrese la edad del empleado"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/lblEdad2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label" />
+
+        <TextView
+            android:id="@+id/lblDireccion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:text="Dirección:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtedad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtdir2"
+            android:layout_width="319dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Ingrese la dirección del empleado"
+            android:inputType="textPersonName"
+            android:maxLength="100"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/lblDireccion2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label" />
+
+        <TextView
+            android:id="@+id/lblPuesto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:text="Puesto:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtdir2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtcargo2"
+            android:layout_width="319dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Ingrese el puesto del empleado"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/lblPuesto2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btmodi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="#338525"
+        android:text="MODIFICAR"
+        app:icon="@android:drawable/ic_popup_sync"
+        app:layout_constraintBottom_toTopOf="@+id/btndell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btndell"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="#C81D11"
+        android:text="Eliminar"
+        app:icon="@android:drawable/ic_menu_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.tareamvc.Transacciones;
+package com.example.tareamvc.transacciones;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -12,12 +12,12 @@ public class SQLiteConexion extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(Transacciones.CreateTableEmpleados);
+        db.execSQL(Transacciones.creartabla);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(Transacciones.DropeTableEmpleados);
+        db.execSQL(Transacciones.EliminaTabla);
         onCreate(db);
     }
 }

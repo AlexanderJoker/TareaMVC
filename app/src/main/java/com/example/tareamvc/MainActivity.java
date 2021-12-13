@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements Observer, View.On
                             txtPuesto.getText().toString());
 
                     empleadosController.openDataBase(getApplicationContext());
-                    empleadosController.createEmpleado(empleado);
+                    empleadosController.crearempleado(empleado);
                     Toast.makeText(getApplicationContext(), "Empleado Guardado", Toast.LENGTH_LONG).show();
                     limpiar();
                 } else {
